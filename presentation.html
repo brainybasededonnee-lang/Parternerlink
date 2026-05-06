@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PartnerLink Pro | Réseau d'Excellence</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #10b981;
+            --gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --text-light: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0; padding: 0; color: #334155; line-height: 1.6; background-color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: var(--gradient);
+            color: var(--text-light);
+            padding: 120px 5% 160px 5%;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin: 0 auto 40px auto; opacity: 0.9; }
+
+        .btn {
+            padding: 16px 40px; border-radius: 50px; font-weight: bold;
+            text-decoration: none; transition: all 0.3s ease; font-size: 1rem; display: inline-block;
+        }
+        .btn-primary { background: var(--accent); color: white; box-shadow: 0 10px 15px rgba(16, 185, 129, 0.4); }
+        .btn-outline { border: 2px solid white; color: white; margin-left: 15px; }
+        .btn:hover { transform: translateY(-3px); filter: brightness(1.1); }
+
+        /* Section Partenaires */
+        .partners { padding: 60px 5%; text-align: center; background: #f8fafc; }
+        .partners-grid { 
+            display: flex; justify-content: center; align-items: center; 
+            gap: 50px; flex-wrap: wrap; opacity: 0.6; filter: grayscale(100%); 
+        }
+        .partners-grid img { height: 40px; transition: 0.3s; }
+        .partners-grid img:hover { filter: grayscale(0%); opacity: 1; }
+
+        /* Avantages avec Images */
+        .section-padding { padding: 100px 5%; max-width: 1200px; margin: auto; }
+        .benefit-row { display: flex; align-items: center; gap: 50px; margin-bottom: 80px; }
+        .benefit-row:nth-child(even) { flex-direction: row-reverse; }
+        .benefit-img { flex: 1; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); width: 100%; max-height: 400px; object-fit: cover; }
+        .benefit-text { flex: 1; }
+        .benefit-text h2 { font-size: 2.2rem; color: var(--primary); margin-bottom: 20px; }
+
+        /* Témoignages */
+        .testimonials { background: #0f172a; color: white; padding: 100px 5%; text-align: center; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px; }
+        .t-card { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1); text-align: left; }
+        .t-user { display: flex; align-items: center; gap: 15px; margin-top: 20px; }
+        .t-user img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; }
+        .t-user b { color: var(--accent); }
+
+        /* CTA */
+        .cta-banner { background: var(--accent); padding: 80px 5%; text-align: center; color: white; }
+        footer { padding: 40px; text-align: center; color: #94a3b8; background: #0f172a; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .benefit-row, .benefit-row:nth-child(even) { flex-direction: column; }
+            .btn-outline { margin-left: 0; margin-top: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>L'Élite de l'Entrepreneuriat Réunie</h1>
+        <p>Développez votre réseau, trouvez des fournisseurs en Chine et collaborez avec des experts du digital sur la plateforme n°1 des décideurs.</p>
+        <div class="btn-group">
+            <a href="index.html" class="btn btn-primary">Rejoindre l'aventure</a>
+            <a href="index.html" class="btn btn-outline">Espace Membre</a>
+        </div>
+    </section>
+
+    <section class="partners">
+        <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: bold; color: #94a3b8; margin-bottom: 30px;">Ils nous font confiance</p>
+        <div class="partners-grid">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Alibaba_Group_logo.svg" alt="Alibaba">
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="benefit-row">
+            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800" class="benefit-img" alt="Collaboration">
+            <div class="benefit-text">
+                <h2>Collaboration sans frontières</h2>
+                <p>Accédez à un flux dynamique où chaque publication est une opportunité. Que vous cherchiez un associé ou un prestataire, la réponse est ici.</p>
+            </div>
+        </div>
+
+        <div class="benefit-row">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800" class="benefit-img" alt="Network">
+            <div class="benefit-text">
+                <h2>Importation Facilitée</h2>
+                <p>Grâce à nos membres experts en logistique, facilitez vos échanges avec la Chine et d'autres marchés internationaux en toute sécurité.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="section-title">
+            <h2 style="color: white; font-size: 2.5rem;">Ce que disent nos leaders</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="t-card">
+                <p>"Grâce à PartnerLink, j'ai trouvé mon fournisseur principal en moins de 48h. C'est l'outil indispensable pour tout importateur."</p>
+                <div class="t-user">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100" alt="User">
+                    <div><b>Jean-Marc K.</b><br><small>CEO, TechSupply</small></div>
+                </div>
+            </div>
+            <div class="t-card">
+                <p>"La qualité des contacts sur cette plateforme est incomparable. Ici, on ne perd pas de temps, on fait du business."</p>
+                <div class="t-user">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100" alt="User">
+                    <div><b>Sarah L.</b><br><small>Fondatrice, Global Trade</small></div>
+                </div>
+            </div>
+            <div class="t-card">
+                <p>"Le système de vérification me rassure énormément. Je sais exactement avec qui je traite."</p>
+                <div class="t-user">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100" alt="User">
+                    <div><b>Robert M.</b><br><small>Directeur, LogisTogo</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <h2>Passez au niveau supérieur</h2>
+        <a href="index.html" class="btn" style="background: var(--primary); color: white; border-radius: 8px;">Démarrer maintenant</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 PartnerLink Pro - Une solution signée <b>BRAINY Agency</b></p>
+    </footer>
+
+</body>
+</html>
